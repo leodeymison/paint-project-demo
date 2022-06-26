@@ -1,0 +1,50 @@
+getContext("2d") = Desenha em dimenções 2d
+beginPath() = Desenhe dois caminhos na tela; um verde e um roxo:
+mousedown = O mouse, ou dispositivo apontador está pressionando um elemento
+mousemove = O mouse está se movendo enquanto está acima de um elemento com listener
+mouseup   = O botão do mouse ou dispositivo foi solto
+.strokeStyle = colocar a cor na linha
+.lineWidth = Largura da linha
+moveTo() = move um objeto
+lineTo() = linha
+stroke() = criar objeto
+closePath()
+offsetX = cordenadas do ponteiro
+offsetY = cordenadas do ponteiro
+
+
+
+
+// ctx.lineTo(100,75); -> Objetos totalmente pintados
+
+    // box.beginPath();
+    // box.arc(75, 75, 50, 0, Math.PI * 2, true); // Círculo exterior
+    // box.moveTo(110, 75);
+    // box.arc(75, 75, 35, 0, Math.PI , false);  // Boca (sentido horário)
+    // box.moveTo(65, 65);
+    // box.arc(60, 65, 5, 0, Math.PI * 2, true);  // Olho esquerdo
+    // box.moveTo(95, 65);
+    // box.arc(90, 65, 5, 0, Math.PI * 2, true);  // Olho direito
+    // box.stroke();
+
+    // Exemplo de curvas de Bézier quadráticas
+    box.beginPath();
+    box.moveTo(75,25);
+    box.quadraticCurveTo(25,25,25,62.5);
+    box.quadraticCurveTo(25,100,50,100);
+    box.quadraticCurveTo(50,120,30,125);
+    box.quadraticCurveTo(60,120,65,100);
+    box.quadraticCurveTo(125,100,125,62.5);
+    box.quadraticCurveTo(125,25,75,25);
+    box.stroke(); -> Linha
+
+    // Exemplo de curvas de Bézier cúbicas
+    // box.beginPath();
+    // box.moveTo(75,40);
+    // box.bezierCurveTo(75,37,70,25,50,25);
+    // box.bezierCurveTo(20,25,20,62.5,20,62.5);
+    // box.bezierCurveTo(20,80,40,102,75,120);
+    // box.bezierCurveTo(110,102,130,80,130,62.5);
+    // box.bezierCurveTo(130,62.5,130,25,100,25);
+    // box.bezierCurveTo(85,25,75,37,75,40);
+    // box.fill(); -> pintado
