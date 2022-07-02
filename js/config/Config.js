@@ -1,0 +1,15 @@
+export const Config = {
+    boxCanvas: document.querySelector('#myPics'),
+    box: document.querySelector('#myPics').getContext('2d'),
+    icone: document.querySelectorAll('.obj-blc'),
+    iconReta: document.querySelector('#iconReta'),
+    linhaQuadrado: document.querySelector('#linha-quadrado'),
+    tamanho: 1,
+    color: '#000',
+    width: 900,
+    height: 500,
+    clicado: false,
+    movendo: false,
+    pos: {x: 0, y: 0},
+    posAnterios: null,
+}

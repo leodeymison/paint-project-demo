@@ -77,7 +77,7 @@ canvas{
 .obj-blc:hover{
   background-color: rgb(0, 204, 255);
 }
-.obj-blc.ative{
+.obj-blc.active{
   background-color: rgb(0, 204, 255);
 }
 .obj-blc img{

@@ -1,0 +1,40 @@
+const comentarioQuadriculadoLogica1 = [
+    (box, x1,y1,x2,y2) => {box.moveTo(x1,y1);},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1+((x2-x1)/6),y1-((y1-y2)/5),x1+((x2-x1)/4),y1-((y1-y2)/5))},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1-((y1-y2)/5), x2, y1-((y1-y2)/5))},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2,y2,x2,y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2,y2,x1-((x2-x1)/10),y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1-((x2-x1)/10),y2,x1-((x2-x1)/10),y1-((y1-y2)/5))},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1-((x2-x1)/10),y1-((y1-y2)/5),x1+((x2-x1)/10),y1-((y1-y2)/5))}
+]
+const comentarioCircularLogica1 = [
+    (box, x1,y1,x2,y2) => {box.moveTo(x1,y1);},           
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1+((x2-x1)/6),y1-((y1-y2)/5),x1+((x2-x1)/4),y1-((y1-y2)/5))}, 
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2-((x2-x1)/3), y1-((y1-y2)/5), x2-((x2-x1)/3), y1-((y1-y2)/5))}, 
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2,y1-((y1-y2)/5),x2,(y1+y2)/2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2,y2,x2-((x2-x1)/3),y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1+((x2-x1)/3),y2,x1+((x2-x1)/3),y2)},  
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1-((x2-x1)/8),y2,x1-((x2-x1)/8),(y2+y1)/2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1-((x2-x1)/8),y1-((y1-y2)/5),x1,y1-((y1-y2)/5))},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1+((x2-x1)/10),y1-((y1-y2)/5),x1,y1)},
+]
+const comentarioPensamentoLogica1 = [
+    (box, x1,y1,x2,y2) => {box.arc(x1, y1, (x2-x1)/35, 0, Math.PI * 2, true)},           
+    (box, x1,y1,x2,y2) => {box.arc(x1+((x2-x1)/10), y1-((y1-y2)/10), (x2-x1)/20, 0, Math.PI * 2, true)},  
+    (box, x1,y1,x2,y2) => {box.moveTo(x1+((x2-x1)/6), y1-(y1+y2)/6)}, 
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1+((x2-x1)/3), y1-((y1+y2)/10),x1+((x2-x1)/3), y1-(y1+y2)/10)},  
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1, y1,x1+((x2-x1)/2), y1-(y1+y2)/10)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1, y1,x1+(((x2-x1)/2)*1.5), y1-(y1+y2)/10)},  
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x1, y1,x1+(((x2-x1)/2)*1.8), y1-(y1+y2)/10)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1,x2, y1-(y1+y2)/6)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2+((x2-x1)/10), y1-((y1+y2)/5),x2, y1-(y1+y2)/4)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2+((x2-x1)/10), y1-((y1+y2)/5),x2, y2+((y1-y2)/5))}, 
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2+((x2-x1)/10), y1-((y1+y2)/5),x2-((x2-x1)/10), y2+((y1-y2)/10))},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1,x2, y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1,x2, y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1,x2, y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1,x2, y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1,x2, y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1,x2, y2)},
+    (box, x1,y1,x2,y2) => {box.quadraticCurveTo(x2, y1,x2, y2)},
+]
